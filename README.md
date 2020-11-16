@@ -35,7 +35,7 @@ $ conda install cookiecutter
 ### The resulting directory structure
 ------------
 
-The directory structure of your new project looks like this: 
+The directory structure of your new project looks like this:
 
 ```
 ├── LICENSE
@@ -48,6 +48,12 @@ The directory structure of your new project looks like this:
 │   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│
+│
+├── experiment         
+│   ├── src       <- Scripts necessary to build/run the experimental task, or a simulation of it.
+│   ├── stimuli        <- Folder to store the stimuli, use DataLad if necessary (soundfiles, videos, heavy images).
+│   └── logs            <- Info and notes about the data collection.
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
